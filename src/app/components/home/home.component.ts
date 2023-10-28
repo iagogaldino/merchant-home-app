@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WebServiceService } from 'src/app/services/web-service.service';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _webServiceService: WebServiceService) { }
 
   ngOnInit() {
   }
@@ -22,13 +23,11 @@ export class HomeComponent implements OnInit {
 
   openWhatsapp() {
     // Número de telefone e mensagem
-    const numeroTelefone = '5574988578851';
-    const mensagem = 'Olá! Petiscaria Movimento.';
-
-    // Construa a URL do WhatsApp
+    const numeroTelefone = this._webServiceService.phone;
+    const mensagem = this._webServiceService.message;
     const urlWhatsapp = `https://wa.me/${numeroTelefone}?text=${encodeURIComponent(mensagem)}`;
 
-    // Abra a URL em uma nova janela ou guia
+    // Abre a URL em uma nova janela ou guia
     window.open(urlWhatsapp, '_blank');
   }
 
