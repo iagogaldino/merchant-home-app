@@ -1,0 +1,10 @@
+.content {
+  height: 100vh;
+  background-color: black;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.a-content {
+  height: 100vh;
+  background-color: black;
+}

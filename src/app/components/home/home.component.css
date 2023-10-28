@@ -1,0 +1,45 @@
+
+.box-status {
+  background-image: url("/assets/text-open.png");
+  width: 70%;
+  height: 90px;
+  background-size: 100% 100%;
+  background-position: center;
+  margin: auto;
+}
+
+button {
+  background-color: #ffcd49;
+  height: 60px;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 15px;
+  text-align: left;
+  background: linear-gradient(to right, #ffcd49 55%, #ffcd49 50%, black 111%, black 116%);
+}
+.bts {
+  padding: 0px 20px 0px 20px;
+}
+
+.text-with-shadow {
+  text-shadow: 1px 0px 6px rgb(255 255 255);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blinking {
+  animation: blink 2s infinite; /* Ajuste a duração e outras propriedades conforme necessário */
+}
+

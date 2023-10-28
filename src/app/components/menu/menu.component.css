@@ -1,0 +1,7 @@
+.menu {
+  background-image: url("../../../assets/menu.png");
+  height: 100vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
