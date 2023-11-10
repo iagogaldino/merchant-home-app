@@ -51,10 +51,9 @@ jobs:
       # 6. Copy to S3 Bucket
       - name: Copy to S3 Bucket
         run: |
-          aws s3 cp ./dist/* s3://daveops.co.in
+          aws s3 cp ./dist/* s3://delsuc1
 
       # 7. (Optional) Invalidate CloudFront
-      - name: Invalidate CloudFront
-        run: |
-          ws s3 sync ./dist/merchant-home-app s3://delsuc1
-      # aws cloudfront create-invalidation --distribution-id <CLOUDFRONT_DISTRIBUTION_ID> --paths "/*"
+      # - name: Invalidate CloudFront
+      #   run: |
+      #     ws s3 sync ./dist/merchant-home-app s3://delsuc1
