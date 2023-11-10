@@ -1,0 +1,14 @@
+FROM node:latest as node
+WORKDIR /app
+COPY . .
+RUN npm install
+RUN npm run build
+
+FROM nginx:alpine
+COPY --from=node /app/dist/merchant-home-app /usr/share/nginx/html
+
+
+# Comando para criar imagem
+# docker build -t merchant-home-app .
+# Comando para rodar o container
+# docker run --name merchant-home-app -d -p 4200:80 merchant-home-app
