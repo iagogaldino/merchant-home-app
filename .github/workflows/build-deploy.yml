@@ -48,7 +48,6 @@ jobs:
         run: |
           ls
           node -v
-          nvm
           npm install -g @angular/cli
           npm install
           ng build
