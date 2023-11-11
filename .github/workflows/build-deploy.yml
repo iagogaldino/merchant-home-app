@@ -47,7 +47,6 @@ jobs:
       - name: Build Angular
         run: |
           ls
-          node -v
           npm install -g @angular/cli
           npm install
           ng build

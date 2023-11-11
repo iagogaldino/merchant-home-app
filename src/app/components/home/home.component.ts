@@ -18,7 +18,8 @@ export class HomeComponent implements OnInit {
   }
 
   onClickOpenGame(): void {
-    window.open('https://luck-appluckluck.onrender.com');
+    // window.open('https://luck-appluckluck.onrender.com');
+    window.open('http://luck-app.s3-website-sa-east-1.amazonaws.com');
   }
 
   openWhatsapp() {
